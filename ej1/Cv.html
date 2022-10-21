@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,84 +8,89 @@
     <title>Curriculum vitae</title>
 </head>
 <style>
+
 #ima {
    
-  top: 8px;
-  right: 16px;
-  width:200px;
-  height:250px;
-  
-  
-  border: 2px solid rgb(17, 17, 17);
-  border-radius:100%;
-
-  
-}
-nav{
-
+   top: 8px;
+   right: 16px;
+   width:200px;
+   height:300px;
+   border: 2px solid rgb(17, 17, 17);
+   border-radius:50px;
+   
+ }
+ #ima2 {
     
-    float:left;
-
+    top: 8px;
+    right: 16px;
+    width:200px;
+    height:250px;
+    margin-left:72px;
+    border: 2px solid rgb(17, 17, 17);
+    margin-top:30px;
     
+  }
 
-}
 article {
-
-    float:left;
+    
     background-color:lightblue;
-    padding: 45px;
-    width: 65%;
+    padding:45px;
+    width:67%;
     margin-left:10px;
     border-style: ridge;   
-    padding-top: 0px;
+    padding-top:5px;
+    padding-bottom:25px;
+    display: inline-block;
+    box-sizing:border-box;
+   
 }
 aside {
-    display: table;
-  clear: both;
-    height:100%;
-    float:left;
+    clear: both;
+    display: inline-block;
     background-color:lightgrey;
-    flex-direction: column;
-    flex-direction: column;
     border-style: ridge;
-    padding-bottom:150px;
-    
+    padding-bottom:20px;
+    box-sizing:border-box;
+    margin-left:4%;
 }
 h1{
     text-align: center;
     text-shadow: 2px 2px 4px #000000;
     text-decoration-line:underline;
-    
 }
 p{
     text-align:center;
-    
-    
+       
+}
+hr{
 
-
+height:2px;
+border-width:0;
+color:rgb(0, 90, 105);
+background-color:rgb(0, 183, 255);
+width:85%;
 }
 
 mark{
-    float:left;
+   float:left;
     background-color:rgba(127, 255, 212, 0.719);
-    
-
-
+    color:white;
+    text-shadow:2px 2px 4px black;
+    display:block;
 }
 </style>
+
 <body style="background-color:rgb(255, 226, 230)">
-    <header>
-    <h1 style="color:rgb(138, 25, 47);size:100px">
-        Curriculum vitae
-    </h1>
-    <hr>
+
+<header>
+    <h1 style="color:rgb(138, 25, 47);size:100px">Curriculum vitae</h1>
+    <hr style="height:3px;color:pink;background-color:pink">
 </header>
 <aside>
-    <nav>
+    <div>
         <table style="background-color:lightgrey">
             <tr style="text-align:center;text-decoration-line:underline;">
               <h1>Datos personales</h1>
-               
             </tr>
             <tr>
                 <td>Nombre y apellidos:</td>
@@ -106,47 +111,49 @@ mark{
             <tr>
                 <td>Número de telefono:</td>
                 <td>674 xxx x 50</td>
-              
             </tr>
             </table>
-            <h1><img id="ima" src="istockphoto-504854859-612x612.jpg" alt="Foto personal" ></h1>
-            
         
-    </nav>
+        <h1><img id="ima" src="fotocur.jpg" alt="Foto personal (no propia)" ></h1>
+        <h2><img id="ima2" src="qr-code.jpg" alt="código qr que en un futuro irá a mi perfil Linkedln"></h2>
+        
+    </div>
 </aside>
 
 <article>
-    <div>
-   <h1>Estudios</h1>
-   <p><mark>2020-2022</mark>Universidad de Farmacia de UCLM grado en farmacia
-    <br/>
-    <mark>2018-2020</mark>Bachillerato de ciencias de la salud en I.E.S Ben Al Jatib
-   </p>
-   <hr>
-    <h1>Pre experiencia</h1>
-   <p><mark>2020-2022</mark>Conocimiento de protocolos de laboratorio (químico y biológico)<br>
-    </p>
-   <hr>
-   <h1>Habilidades</h1>
-   <p>Nivel de inglés alto, rumano nativo, español nativo y nivel básico de francés.<br/>
-    Facilidad de aprendizaje práctico rápido<br/>Conocimiento de hardware<br>
-    Carnet de conducir A1 y B.<br></p>
+ <div>
+     <h1>Estudios</h1>
+    <p><mark>Presente</mark>Grado Superior en Cenec de Desarrollo Aplicaciones Web <br>
+     <mark>2020-2022</mark>Universidad de Farmacia de UCLM grado en farmacia
+     <br/>
+     <mark>2018-2020</mark>Bachillerato de ciencias de la salud en I.E.S Ben Al Jatib</p>
     <hr>
-   
-   <h1>Persona</h1>
-   <p>Paciente y ordenado.<br>Responsable.<br>   </p>
-   <hr>
-    </div>
+     <h1>Pre experiencia</h1>
+    <p><mark>2020-2022</mark>Conocimiento de protocolos de laboratorio <span style="Color:darkblue"><b>(químico y biológico)</b></span><br>
+     Traducción productos AliExpress del inglés al español <span style="Color:darkblue"><b>(Excel y Word)</b></span><br>
+     Trabajo en equipo durante mis estudios en Bachillerato <span style="Color:darkblue"><b>(HTML y CSS)</b></span><br>
+     Desarrollo de aplicaciones sencillas durante mis estudios en Bachillerato <br>
+     Edición de fotografías y vídeo <span style="Color:darkblue"><b>(Gimp y editores de video)</b></span><br>
+     </p>
+    <hr>
+     <h1>Habilidades</h1>
+    <p>Nivel de inglés alto, rumano nativo, español nativo y nivel básico de francés.<br/>
+     Facilidad de aprendizaje práctico rápido<br/>Conocimiento de hardware<br>
+     Carnet de conducir A1 y B.<br>Nivel básico en HTML y CSS <br> Nivel básico en programación de aplicaciones</p>
+    <hr>
+    <h1>Estudiando</h1>
+     <p><mark>Cursos</mark><br>Javascript<br>C++ y C<br>PHP<br>Python</p>
+     <hr>
+     <h1>Persona</h1>
+     <p>Paciente y ordenado.<br>Responsable.<br>Sociable y bueno trabajando en equipo<br>   </p>
 
+ </div>
 </article>
 
 <footer>
-
- <h1 style="clear:left;padding-top:20px"><a href="../index.html">Index</a></h1>
-
-
     
-    
+    <h1 style="clear:left;padding-top:20px"><a href="../index.html">Index</a></h1>
+
 </footer>
 </body>
 
