@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda parte juego</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <!-- Autor Cosmin-Valentín Movila 1ºDAW -->
+
+</head>
+
+<body>
+    <header>
+        <h1>Parte 2 del juego</h1>
+        <div id="sol">
+            <input id="ver" type="button" onclick="mostrar()" value="¿Pista?" />
+            <input id="ocultar" type="button" onclick="ocultar()" value="Ocultar la pista" />
+
+        </div>
+
+
+
+        <div id="solucion">
+            <p><br />
+                Haz click en el texto y verás mediante colores la solución.
+                <br>Lee en orden.
+            </p>
+        </div>
+
+        <script>
+            function ocultar() {
+                /* oculto la oferta */
+                document.getElementById("solucion").style.display = "none";
+
+                /* muestro el botón para volver a ver la oferta */
+                document.getElementById("ver").style.display = "inline-block";
+
+                /* oculto este botón */
+                document.getElementById("ocultar").style.display = "none";
+
+                return;
+            }
+
+            function mostrar() {
+                document.getElementById("solucion").style.display = "table";
+
+                /* muestro el botón para ocultar la oferta */
+                document.getElementById("ocultar").style.display = "inline-block";
+
+                /* oculto este botón */
+                document.getElementById("ver").style.display = "none";
+
+                return;
+            }
+
+
+        </script>
+    </header>
+    
+        
+    <div id="prueb2">
+        <section>
+            <!-- Irán al indice si fallas, irán a la prueba 2 si se acierta. -->
+            <h2 >¿Eres capaz de resolver este acertijo?</h2>
+            <hr>
+            <p id="acertijo">Estás escapando de un laberinto, y 
+                tienes tres puertas delante. <mark>L</mark>a puerta de la 
+                izquierda lleva a un ardi<mark>e</mark>nte infierno. La puerta del 
+                centro a un brutal asesino. Y la puerta de la derecha a 
+                un le<mark>ó</mark>n que <mark>n</mark>o ha comido en tres meses. ¿Qué puerta escoges?
+                <hr>
+                <br>Si fallas la pregunta, serás redirigido a mi índice, ya que habrías muerto.
+                <br>
+                Pero si aciertas, habrás ganado.
+            </p>
+            <div id="botoncitos3">
+            <a id="" href="/index.html" class="boton4">Infierno
+                
+            </a>
+            <a href="/index.html" class="boton4">Asesino</a>
+           
+            <p class="boton5" class="win">León</a>
+            
+         
+            
+            
+            </div>
+            <div class="win">
+            <p id="gan"><br>Felicidades, has ganado.<br><br></p>
+            </div>
+            
+        </div>
+    </div>
+        </section>
+
+    </div>
+
+
+    <footer>
+        <div id="foot">
+            <h1>¿Te rindes?</h1>
+            <div id="inv">
+                <div id="bla">
+                    <p id="frase">Si te rindes serás asesinado, así que al menos intentalo.</p>
+
+                </div>
+                <div id="footl">
+                    <a href="pag1.html" class="boton">Prueba 1</a>
+                    <a href="pag2.html" class="boton">Prueba 2</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
