@@ -15,15 +15,15 @@
     <header>
         <h1>Parte 2 del juego</h1>
         <div id="sol">
-            <input id="ver" type="button" onclick="mostrar()" value="¿Pista?" />
-            <input id="ocultar" type="button" onclick="ocultar()" value="Ocultar la pista" />
+            <input id="ver" type="button" onclick="mostrar()" value="¿Pista?">
+            <input id="ocultar" type="button" onclick="ocultar()" value="Ocultar la pista">
 
         </div>
 
 
 
         <div id="solucion">
-            <p><br />
+            <p><br>
                 Haz click en el texto y verás mediante colores la solución.
                 <br>Lee en orden.
             </p>
@@ -58,48 +58,53 @@
 
         </script>
     </header>
-    
-        
-    <div id="prueb2">
-        <section>
-            <!-- Irán al indice si fallas, irán a la prueba 2 si se acierta. -->
-            <h2 >¿Eres capaz de resolver este acertijo?</h2>
-            <hr>
-            <p id="acertijo">Estás escapando de un laberinto, y 
-                tienes tres puertas delante. <mark>L</mark>a puerta de la 
-                izquierda lleva a un ardi<mark>e</mark>nte infierno. La puerta del 
-                centro a un brutal asesino. Y la puerta de la derecha a 
-                un le<mark>ó</mark>n que <mark>n</mark>o ha comido en tres meses. ¿Qué puerta escoges?
-                <hr>
-                <br>Si fallas la pregunta, serás redirigido a mi índice, ya que habrías muerto.
-                <br>
-                Pero si aciertas, habrás ganado.
-            </p>
-            <div id="botoncitos3">
-            <a id="" href="/index.html" class="boton4">Infierno
-                
-            </a>
-            <a href="/index.html" class="boton4">Asesino</a>
-           
-            <p class="boton5" class="win">León</a>
-            
-         
-            
-            
-            </div>
-            <div class="win">
-            <p id="gan"><br>Felicidades, has ganado.<br><br></p>
-            </div>
-            
-        </div>
-    </div>
-        </section>
 
+
+    <div id="prueb3">
+        <section id="sec">
+            <!-- Irán al indice si fallas, irán a la prueba 2 si se acierta. -->
+            <h2>¿Eres capaz de resolver este acertijo?</h2>
+            <hr>
+            <p id="acertijo">Estás escapando de un laberinto, y
+                tienes tres puertas delante.<br> <mark>L</mark>a puerta de la
+                izquierda lleva a un ardi<mark>e</mark>nte infierno.<br> La puerta del
+                centro a un brutal asesino.<br>La puerta de la derecha a
+                un le<mark>ó</mark>n que <mark>n</mark>o ha comido en tres meses.<br> ¿Qué puerta escoges?
+            </p><hr>
+            
+            <p>Si fallas la pregunta, serás redirigido a mi índice, ya que habrías muerto.
+            </p>
+            <p>Pero si aciertas, habrás ganado.</p>
+            <hr>
+            <div id="botoncitos3">
+                <a href="/index.html" class="boton4">Infierno</a>
+                <a href="/index.html" class="boton4">Asesino</a>
+
+                <div onclick="myFunction()" class="boton5" id="win">León</div>
+                <script>
+                    function myFunction() {
+                        document.getElementById("gan").innerHTML = "Felicidades, has ganado.";
+                        document.getElementById("gan").style.backgroundColor = "rgb(63, 0, 0)";
+                        return;
+                    }
+                </script>
+
+
+
+            </div>
+            <div>
+                <p id="gan"></p>
+            </div>
+        </section>
     </div>
+    
+    
+
+    
 
 
     <footer>
-        <div id="foot">
+        <div id="foot1">
             <h1>¿Te rindes?</h1>
             <div id="inv">
                 <div id="bla">

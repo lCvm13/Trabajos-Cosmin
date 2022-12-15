@@ -15,15 +15,15 @@
     <header>
         <h1>¿Quieres jugar a un juego?</h1>
         <div id="sol">
-            <input id="ver" type="button" onclick="mostrar()" value="¿Solución?" />
-            <input id="ocultar" type="button" onclick="ocultar()" value="Ocultar la solución" />
+            <input id="ver" type="button" onclick="mostrar()" value="¿Solución?">
+            <input id="ocultar" type="button" onclick="ocultar()" value="Ocultar la solución">
 
         </div>
 
 
 
         <div id="solucion">
-            <p><br />
+            <p><br>
                 La solución se verá mediante colores en unos segundos.
             </p>
         </div>
@@ -58,97 +58,100 @@
         </script>
     </header>
     <div id="prueb">
-        <aside>
-            <picture id="portaFoto">
-                <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./squares-grande-h.heic"
-                    type="image/heic">
-                <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./squares-grande-h.webp"
-                    type="image/webp">
-                <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./squares-grande-h.jpg"
-                    type="image/jpeg">
-                <source media="(orientation: portrait) and (min-width:601px)" srcset="./squares-grande-v.heic"
-                    type="image/heic">
-                <source media="(orientation: portrait) and (min-width:601px)" srcset="./squares-grande-v.webp"
-                    type="image/webp">
-                <source media="(orientation: portrait) and (min-width:601px)" srcset="./squares-grande-v.jpg"
-                    type="image/jpg">
+        <div id="main">
+            <aside>
+                <picture id="portaFoto">
+                    <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./squares-grande-h.heic"
+                        type="image/heic">
+                    <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./squares-grande-h.webp"
+                        type="image/webp">
+                    <source media="(orientation: landscape) and (min-width: 1201px)" srcset="./squares-grande-h.jpg"
+                        type="image/jpeg">
+                    <source media="(orientation: portrait) and (min-width:601px)" srcset="./squares-grande-v.heic"
+                        type="image/heic">
+                    <source media="(orientation: portrait) and (min-width:601px)" srcset="./squares-grande-v.webp"
+                        type="image/webp">
+                    <source media="(orientation: portrait) and (min-width:601px)" srcset="./squares-grande-v.jpg"
+                        type="image/jpg">
 
 
-                <source media="(orientation: landscape) and (min-width: 901px)" srcset="./squares-mediana-h.heic"
-                    type="image/heic">
-                <source media="(orientation: landscape) and (min-width: 901px)" srcset="./squares-mediana-h.webp"
-                    type="image/webp">
-                <source media="(orientation: landscape) and (min-width: 901px)" srcset="./squares-mediana-h.jpg"
-                    type="image/jpeg">
-                <source media="(orientation: portrait) and (min-width:401px)" srcset="./squares-mediana-v.heic"
-                    type="image/heic">
-                <source media="(orientation: portrait) and (min-width:401px)" srcset="./squares-mediana-v.webp"
-                    type="image/webp">
-                <source media="(orientation: portrait) and (min-width:401px)" srcset="./squares-mediana-v.jpg"
-                    type="image/jpg">
+                    <source media="(orientation: landscape) and (min-width: 901px)" srcset="./squares-mediana-h.heic"
+                        type="image/heic">
+                    <source media="(orientation: landscape) and (min-width: 901px)" srcset="./squares-mediana-h.webp"
+                        type="image/webp">
+                    <source media="(orientation: landscape) and (min-width: 901px)" srcset="./squares-mediana-h.jpg"
+                        type="image/jpeg">
+                    <source media="(orientation: portrait) and (min-width:401px)" srcset="./squares-mediana-v.heic"
+                        type="image/heic">
+                    <source media="(orientation: portrait) and (min-width:401px)" srcset="./squares-mediana-v.webp"
+                        type="image/webp">
+                    <source media="(orientation: portrait) and (min-width:401px)" srcset="./squares-mediana-v.jpg"
+                        type="image/jpg">
 
 
 
-                <source media="(orientation: landscape) and (max-width: 900px)" srcset="./squares-pequeña-h.heic"
-                    type="image/heic">
-                <source media="(orientation: landscape) and (max-width: 900px)" srcset="./squares-pequeña-h.webp"
-                    type="image/webp">
-                <source media="(orientation: landscape) and (max-width: 900px)" srcset="./squares-pequeña-h.jpg"
-                    type="image/jpeg">
-                <source media="(orientation: portrait) and (max-width: 400px)" srcset="./squares-pequeña-v.heic"
-                    type="image/heic">
-                <source media="(orientation: portrait) and (max-width: 400px)" srcset="./squares-pequeña-v.webp"
-                    type="image/webp">
-                <source media="(orientation: portrait) and (max-width: 400px)" srcset="./squares-pequeña-v.jpg"
-                    type="image/jpg">
+                    <source media="(orientation: landscape) and (max-width: 900px)" srcset="./squares-pequeña-h.heic"
+                        type="image/heic">
+                    <source media="(orientation: landscape) and (max-width: 900px)" srcset="./squares-pequeña-h.webp"
+                        type="image/webp">
+                    <source media="(orientation: landscape) and (max-width: 900px)" srcset="./squares-pequeña-h.jpg"
+                        type="image/jpeg">
+                    <source media="(orientation: portrait) and (max-width: 400px)" srcset="./squares-pequeña-v.heic"
+                        type="image/heic">
+                    <source media="(orientation: portrait) and (max-width: 400px)" srcset="./squares-pequeña-v.webp"
+                        type="image/webp">
+                    <source media="(orientation: portrait) and (max-width: 400px)" srcset="./squares-pequeña-v.jpg"
+                        type="image/jpg">
 
-                <img id="laFoto" alt="Foto de cuadrados" title="adivina" src="./squares.jpg" />
-            </picture>
-    
+                    <img id="laFoto" alt="Foto de cuadrados" title="adivina" src="./squares.jpg"> 
+                </picture>
 
 
-    </aside>
-    <div id="prueb2">
-        <section>
-            <!-- Irán al indice si fallas, irán a la prueba 2 si se acierta. -->
-            <h2 >¿Cúantos cuadrados ves?</h2>
-            <hr>
-            <p>Si fallas la pregunta, serás redirigido a mi índice
-                <br>
-                Pero si aciertas, irás a la segunda prueba.
-            </p>
-            <div id="botoncitos1">
-            <a id="" href="/index.html" class="boton2">5
-                
-            </a>
-            <a href="/index.html" class="boton2">2</a>
-        </div>
-        <div id="botoncitos2">
-            <a href="/index.html" class="boton2">20</a>
-            <p href="/pag2.html" class="boton3">6</a>
+
+            </aside>
+            <div id="prueb2">
+                <section id="sec1">
+                    <!-- Irán al indice si fallas, irán a la prueba 2 si se acierta. -->
+                    <h2>¿Cúantos cuadrados ves?</h2>
+                    <hr>
+                    <p>Si fallas la pregunta, serás redirigido a mi índice
+                        <br>
+                        Pero si aciertas, irás a la segunda prueba.
+                    </p>
+                    <hr>
+
+                    <div id="botoncitos1">
+                        <a href="./index.html" class="boton2">5
+
+                        </a>
+                        <a href="./index.html" class="boton2">2</a>
+                    </div>
+                    <div id="botoncitos2">
+                        <a href="./index.html" class="boton2">20</a>
+                        <a href="/pag2.html" class="boton3">6</a>
+                    </div>
+
+                </section>
+
             </div>
+        </div>
 
-        </section>
+        <footer>
+            <div id="foot">
+                <h1>¿Te rindes?</h1>
+                <div id="inv">
+                    <div id="bla">
+                        <p id="frase">Si te rindes y pasas a la prueba 2, perderás un brazo.</p>
 
+                    </div>
+                    <div id="footl">
+                        <a href="pag1.html" class="boton">Prueba 1</a>
+                        <a href="pag2.html" class="boton">Prueba 2</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-
-</div>
-    <footer>
-        <div id="foot">
-            <h1>¿Te rindes?</h1>
-            <div id="inv">
-                <div id="bla">
-                    <p id="frase">Si te rindes y pasas a la prueba 2, perderás un brazo.</p>
-
-                </div>
-                <div id="footl">
-                    <a href="pag1.html" class="boton">Prueba 1</a>
-                    <a href="pag2.html" class="boton">Prueba 2</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
 </body>
 
 </html>
