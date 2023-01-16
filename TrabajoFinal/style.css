@@ -1,15 +1,26 @@
 h1 {
-    text-align:center;
-    color:rgb(177, 1, 1);
+    text-align: center;
+    color: rgb(177, 1, 1);
     font-weight: bolder;
     text-shadow: 3px 3px 3px black;
 }
-body{
+h2 {
+    text-align: center;
+    color: brown;
+    font-weight: bolder;
+    text-shadow: 1px 1px  black;
+    text-decoration: underline;
+}
+
+
+body {
     background-image: url("mano.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    overflow-x: hidden;
 }
+
 .boton {
     background-color: #4CAF50;
     border: none;
@@ -21,8 +32,9 @@ body{
     margin: 4px 2px;
     cursor: pointer;
     width: 30%;
-  }
-  .boton2 {
+}
+
+.boton2 {
     background-color: #d50060;
     border: none;
     color: white;
@@ -39,8 +51,9 @@ body{
     animation-iteration-count: infinite;
     animation-delay: 15s;
     width: 20%;
-  }
-  .boton3 {
+}
+
+.boton3 {
     background-color: #d50060;
     border: none;
     color: white;
@@ -56,65 +69,91 @@ body{
     animation-iteration-count: infinite;
     animation-delay: 15s;
     width: 20%;
-  }
-  .boton4 {
+
+}
+
+.boton4 {
     background-color: #00009d;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    width: 10%;
-  }
-  .boton5 {
+    width: 50px;
+
+
+}
+
+.boton5 {
     background-color: #00009d;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    width: 10%;
-  }
-  #botoncitos1{
+    width: 50px;
+}
+
+#botoncitos1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
-  }
-  #botoncitos2{
+
+    background-color: lightgray;
+    white-space: normal;
+}
+
+#botoncitos2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
-  }
-  #botoncitos3{
+    background-color: lightgray;
+
+}
+
+#sec1 {
+    background-color: lightgray;
+}
+
+#botoncitos3 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
-  }
-  @keyframes acertar {
-    from {background-color: #d50060;}
-    to {background-color: yellow;}
-  }
-  @keyframes fallar {
-    from {background-color: #d50060;}
-    to {background-color: rgb(0, 0, 0);}
-  }
-  .ver {
+    flex-wrap: wrap;
+
+
+}
+
+@keyframes acertar {
+    from {
+        background-color: #d50060;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+
+@keyframes fallar {
+    from {
+        background-color: #d50060;
+    }
+
+    to {
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+.ver {
     background-color: #d50060;
     border: none;
     color: white;
@@ -125,34 +164,41 @@ body{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    
-  }
 
-#fallo{
-    text-decoration: none;
-    color:transparent;
-    padding: 10px;
-    transition: all 0.5s ease;     
-       
 }
-#fallo:active{
-    color:red;
-   text-shadow: 3px 3px 3px black;
+
+#fallo {
+    text-decoration: none;
+    color: transparent;
+    padding: 10px;
+    transition: all 0.5s ease;
+
+}
+
+#fallo:active {
+    color: red;
+    text-shadow: 3px 3px 3px black;
     font-weight: bold;
 }
 
 #portaFoto {
     width: 30vw;
-    height: 40vh;
+    height: 20em;
     background-color: lightpink;
     display: block;
-    margin-left: 5%;
+    margin-bottom: 10%;
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+#main {
+    display: flex;
+    margin-left: 2em;
 }
 
 #laFoto {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 
@@ -171,19 +217,41 @@ body{
     }
 }
 
-#prueb{
-    display:flex;  
+#prueb {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-left:5%;
-    margin-top: 5%;
+    margin-left: 10vh;
+    margin-top: 5vh;
+
+
 }
-#prueb2{
+
+#prueb2 {
+
     background-color: lightgray;
     text-align: center;
     font-weight: bold;
-    margin-left:  10%;
-    flex-wrap: nowrap;
+    height: 20em;
+    width: 50vw;
+    margin-right: 10em;
+    margin-bottom: 5vh;
+
 }
+
+#prueb3 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+#sec {
+    width: 70%;
+    background-color: lightgrey;
+}
+
 #solucion {
     position: absolute;
     top: 0;
@@ -207,77 +275,173 @@ body{
 }
 
 #ver {
-    display:block;
-    background-color:darkred;
+    display: block;
+    background-color: darkred;
     font-weight: bold;
-    color:white;
+    color: white;
 }
 
 #ocultar {
     display: none;
-    background-color:darkred;
+    background-color: darkred;
     font-weight: bold;
-    color:white;
-}
-#sol{
-    display:flex;
-    justify-content: flex-end;
-    margin-right: 20px;
-    
-}
-#fallo.active{
-    display:block;
-    background-color:darkred;
-    font-weight: bold;
-    color:white;
+    color: white;
 }
 
-#foot{
-    margin-top: 15%;
+#sol {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+
+}
+
+#fallo.active {
+    display: block;
+    background-color: darkred;
+    font-weight: bold;
+    color: white;
+}
+
+p::first-line {
+    text-decoration: overline;
+}
+
+#sec>p::first-letter {
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+    background-color: black;
+    border-color: black;
+    border-style: solid;
+    color: #d50060;
+
+}
+
+#sec1>p::first-letter {
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+    background-color: black;
+    border-color: black;
+    border-style: solid;
+    color: #d50060;
+
+}
+
+#foot {
+
+    width: 100vh;
+    margin-left: -10vh;
+    margin-top: 5em;
+    ;
+}
+
+#footl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+#inv {
+    text-decoration: none;
+    color: transparent;
+    padding: 10px;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+#inv:hover {
+    color: red;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+
+}
+
+#inv:hover #frase::first-letter {
+
+    background-color: red;
+    border-color: red;
+    border-style: solid;
+    color: #ffffff;
+    font-size: x-large;
+    text-decoration: black;
+
+}
+
+#inv:hover #frase {
+    background-color: rgb(63, 0, 0);
+
+}
+
+
+
+#acertijo>mark {
+    background-color: transparent;
+}
+
+#acertijo:active>mark {
+    background-color: aqua;
+    font-weight: bold;
+    color: white
+}
+
+#gan {
+    color: red;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+    line-height: 2.5;
+    padding: 10px;
+    transition: all 0.5s ease;
+    text-align: center;
+
+}
+
+@media screen and (max-width:476px) {
+    .boton2{
+        width: 10px;
+        height: 10px;
+    }
+    .boton3{
+        width: 10px;
+        height: 10px;
+    }
+    #portaFoto{
+        margin-left:15% ;
+    }
     
+}
+@media screen and (max-width:400px) {
+    .boton2{
+        width: 10px;
+        height: 10px;
     }
-    #footl{
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        
-        
+    .boton3{
+        width: 10px;
+        height: 10px;
     }
-    #inv{
-        text-decoration: none;
-        color:transparent;
-        padding: 10px;
-        transition: all 0.5s ease;     
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        
-    }
-    #inv:hover{
-        color:red;
-       text-shadow: 3px 3px 3px black;
-        font-weight: bold;
-    }
-   
-    #acertijo > mark{
-        background-color: transparent;
-    }
-    #acertijo:active > mark{
-        background-color: aqua;
-        font-weight: bold;
-        color:white
-    }
-     #gan{
-        text-decoration: none;
-        color:transparent;
-        padding: 10px;
-        transition: all 0.5s ease;     
-        text-align: center;
-    }
-     .win:active > #gan {
-        color:red;
-       text-shadow: 3px 3px 3px black;
-        font-weight: bold;
-        background-color: rgb(63, 0, 0);
+    #portaFoto{
+        margin-left:25% ;
     }
     
+}
+@media screen and (max-width:358px) {
+    .boton2{
+        width: 5px;
+        height: 5px;
+    }
+    .boton3{
+        width: 5px;
+        height: 5px;
+    }
+    #portaFoto{
+        margin-left:28% ;
+    }
+}
+
+
