@@ -11,7 +11,7 @@
     
     <xsl:for-each select="cancion/estrofa"/>
     
-     <xsl:for-each select="verso"/>
+     <xsl:for-each select="verso">
           <xsl:value-of select="."/>
          </xsl:for-each>
     
