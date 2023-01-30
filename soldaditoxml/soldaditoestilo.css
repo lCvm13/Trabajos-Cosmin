@@ -1,0 +1,41 @@
+body{
+    background-color: lightyellow;
+}
+
+
+
+.aut{
+    font-size: large;
+    color:darkred;
+   }
+h1{
+   color:yellowgreen;
+    display:block;
+    text-align: center;
+    counter-reset: estrofa;
+}
+
+span{
+color:blue;
+background-color: yellow;
+font-weight: bold;
+}
+h2{
+   color:black;
+    text-align: center;
+    counter-increment: estrofa;
+    counter-reset: verso;
+}
+h2::after{
+    content:counter(estrofa) ": ";
+}
+p{
+    display: block;
+    color:blue;
+    text-align: center;
+ }
+p::before{
+   
+    counter-increment: verso;
+    content: "Verso " counter(verso) ": ";
+}
