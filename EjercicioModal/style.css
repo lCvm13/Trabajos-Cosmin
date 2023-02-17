@@ -1,0 +1,445 @@
+h1 {
+    text-align: center;
+    color: rgb(177, 1, 1);
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px black;
+}
+h2 {
+    text-align: center;
+    color: brown;
+    font-weight: bolder;
+    text-shadow: 1px 1px  black;
+    text-decoration: underline;
+}
+
+
+body {
+    background-image: url("mano.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.boton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 30%;
+}
+
+.boton2 {
+    background-color: #d50060;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    animation-name: fallar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 15s;
+    width: 20%;
+}
+
+.boton3 {
+    background-color: #d50060;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    animation-name: acertar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 15s;
+    width: 20%;
+
+}
+
+.boton4 {
+    background-color: #00009d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50px;
+
+
+}
+
+.boton5 {
+    background-color: #00009d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50px;
+}
+
+#botoncitos1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    white-space: normal;
+}
+
+#botoncitos2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+
+}
+
+#sec1 {
+    background-color: lightgray;
+}
+
+#botoncitos3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+
+#fallo {
+    text-decoration: none;
+    color: transparent;
+    padding: 10px;
+    transition: all 0.5s ease;
+
+}
+
+#fallo:active {
+    color: red;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+}
+
+#portaFoto {
+    width: 30vw;
+    height: 20em;
+    background-color: lightpink;
+    display: block;
+    margin-bottom: 10%;
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+#main {
+    display: flex;
+    margin-left: 2em;
+}
+
+#laFoto {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media screen and (orientation:landscape) {
+    #portaFoto {
+        max-width: 1920px;
+        max-height: 1280px;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    #portaFoto {
+        max-width: 800px;
+        max-height: 1200px;
+    }
+}
+
+#prueb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10vh;
+    margin-top: 5vh;
+
+
+}
+
+#prueb2 {
+
+    background-color: lightgray;
+    text-align: center;
+    font-weight: bold;
+    height: 20em;
+    width: 50vw;
+    margin-right: 10em;
+    margin-bottom: 5vh;
+
+}
+
+#prueb3 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+#sec {
+    width: 70%;
+    background-color: lightgrey;
+}
+
+#solucion {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background-color: rgba(62, 0, 0, 0.8);
+    z-index: 1;
+    display: none;
+}
+
+#solucion p {
+    display: table-cell;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+}
+
+
+
+#sol {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+
+}
+
+#fallo.active {
+    display: block;
+    background-color: darkred;
+    font-weight: bold;
+    color: white;
+}
+
+p::first-line {
+    text-decoration: overline;
+}
+
+#sec>p::first-letter {
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+    background-color: black;
+    border-color: black;
+    border-style: solid;
+    color: #d50060;
+
+}
+
+#sec1>p::first-letter {
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+    background-color: black;
+    border-color: black;
+    border-style: solid;
+    color: #d50060;
+
+}
+
+#foot {
+
+    width: 100vh;
+    margin-left: -10vh;
+    margin-top: 5em;
+    ;
+}
+
+#footl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+#inv {
+    text-decoration: none;
+    color: transparent;
+    padding: 10px;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+#inv:hover {
+    color: red;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+
+}
+
+#inv:hover #frase::first-letter {
+
+    background-color: red;
+    border-color: red;
+    border-style: solid;
+    color: #ffffff;
+    font-size: x-large;
+    text-decoration: black;
+
+}
+
+#inv:hover #frase {
+    background-color: rgb(63, 0, 0);
+
+}
+
+
+
+#acertijo>mark {
+    background-color: transparent;
+}
+
+#acertijo:active>mark {
+    background-color: aqua;
+    font-weight: bold;
+    color: white
+}
+
+#gan {
+    color: red;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+    line-height: 2.5;
+    padding: 10px;
+    transition: all 0.5s ease;
+    text-align: center;
+
+}
+
+#modal {
+    background: rgba(24, 24, 24, 0.849);
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+    
+  }
+
+  #modal p {
+    width: 60%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  #modal {
+    background: rgba(24, 24, 24, 0.849);
+    color: #ffffff;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+  }
+  #mostrar-modal {
+    display:none;
+  }
+  #mostrar-modal + label {
+    background: rgb(139, 0, 46);
+    display: inline-block;
+    justify-content: flex-start;
+    margin-right: 20px;
+    color: #fff;
+    line-height: 3;
+    padding: 0 1em;
+    cursor: pointer;
+    
+  }
+  #mostrar-modal + label:hover {
+    background: #0088ff;
+  }
+  #mostrar-modal:checked ~ #modal {
+    top: 0;
+  }
+  #cerrar-modal {
+    display: none;
+  }
+  #cerrar-modal + label {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 100;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgb(143, 21, 0);
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all .5s;
+  }
+  #cerrar-modal:checked ~ #modal {
+    top: -100vh;
+  }
+  #cerrar-modal + label {
+    display: none;
+  }
+  #mostrar-modal:checked ~ #cerrar-modal + label {
+    display: block;
+  }
+  #cerrar-modal:checked + label {
+    display: none;
+  }
