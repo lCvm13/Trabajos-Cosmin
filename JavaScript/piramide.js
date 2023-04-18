@@ -9,12 +9,13 @@
             for (j=0;j<t;j++){
                 if(j==t/2){
                     for (k=0;k<2*i-1;k++){    
-                        s+document.write('o');
+                        s+=document.write('o');
                     }
                 }else{
                     document.write('|');
                 }
             }
           }
+          return s
         }
        
