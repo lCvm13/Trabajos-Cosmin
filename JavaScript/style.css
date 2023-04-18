@@ -1,0 +1,55 @@
+#primera{
+    display:flex;
+    justify-content: space-between;
+    background-color:rgba(0, 100, 0, 0.281);
+    height:33vh;
+    width:100%;
+}
+#segunda{
+    display:flex;
+    justify-content: center;
+    background-color:rgba(139, 0, 0, 0.281);
+    height:33vh;
+    width:100%;
+}
+#tercera{
+    display:flex;
+    justify-content: space-between;
+    background-color:rgba(127, 255, 212, 0.281);
+    height:33vh;
+    width:100%;
+}
+
+#c1{
+    display:flex;
+    
+    height:33vh;
+    width:30vh;
+    background-color:green;
+}
+#c2{
+    display:flex;
+    
+    height:33vh;
+    width:30vh;
+    background-color:greenyellow;
+   
+}
+#c3{
+    display:flex;
+    height:33vh;
+    width:30vh;
+    background-color:red;
+}
+#c4{
+    display:flex;
+    height:33vh;
+    width:30vh;
+    background-color:darkblue;
+}
+#c5{
+    display:flex;
+    height:33vh;
+    width:30vh;
+    background-color:cyan;
+}

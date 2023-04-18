@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+   <div id="primera">
+    <div id="c1" class="figura">1</div>
+    <div id="c2" class="figura">2</div>
+   </div>
+   <div id="segunda">
+    <div id="c3" class="figura">3</div>
+   </div>
+   <div id="tercera">
+    <div id="c4" class="figura">4</div>
+    <div id="c5" class="figura">5</div>
+   </div>
+    
+   
+    <script>
+        function pregunta(){
+        let pregunta=prompt('Dime en qué lugar quieres que se imprima la piramide','');
+        let respuesta=parseInt(pregunta);
+        
+       if(respuesta==1){
+        c1.innerHTML=piramide();
+       }
+
+        }
+       pregunta();
+    </script>
+    <script src="./flex2.js"></script>
+    
+</body>
+</html>

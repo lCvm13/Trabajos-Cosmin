@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+   <!-- 
+2.- Imprimir una pirámide a partir de la columna 20, de 3 filas por 5 columnas, usando la letra o
+AVANZADO: centrarla en una pantalla que supuestamente tiene 80 columnas.
+MASTER: y si los vértices son asteriscos? en todo caso usamos bucles, sin hacer trampas
+    -->
+    <script>
+        let t=80;
+        let y=3;
+        let x=5;
+        let s='o';
+        function piramide(){
+          for (i=1;i<y+1;i++){
+            document.write('<br>');
+            for (j=0;j<t;j++){
+                if(j==t/2){
+                    for (k=0;k<2*i-1;k++){    
+                        s+document.write('o');
+                    }
+                }else{
+                    document.write('|');
+                }
+            }
+          }
+        }
+        piramide();
+
+    </script>
+   
+</body>
+</html>

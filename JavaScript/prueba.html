@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    
+    <script>
+        // seccion de codigo javascript 
+        
+        
+    /*    function getCurrentURL () {
+    return window.location.href
+    }
+
+// Example
+        const url = getCurrentURL()
+
+       function comprobacionUrl(){
+        if (url=='file:///C:/Users/1%C2%BA%20DAW/Documents/GitHub/CosminPrivado/lenguaje%20de%20marcas/JavaScript/prueba.html'){
+            alert('Estas en la pagina web');
+        }else{
+            document.write('No estas en la pagina principal')
+        }
+       }
+       comprobacionUrl()*/
+       // seccion de codigo javascript 
+       function prueba() {
+
+       
+  var x1,x2,x3;
+  x1=prompt('Ingrese el primer valor:','');
+  x2=prompt('Ingrese el segundo valor:','');
+  x1=parseInt(x1);
+  x2=parseInt(x2);
+  x3=x2/8;
+  if (isNaN(x1) || isNaN(x2))
+  {
+    document.write('Al menos uno de los dos valores ingresados no es numérico.');
+  }
+  else
+  {
+        for (i=1;i<=x2;i++){
+        document.write(x1 + ' ');
+        if (i%8==0){
+            document.write('<br>');
+        }
+    }
+    
+    
+  }
+    }
+  prueba();
+      </script>
+   
+</body>
+</html>
