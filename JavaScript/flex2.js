@@ -13,7 +13,7 @@ do{
     color= parseInt(color);
 }while(cuadro<=0||cuadro>3)
 var decision;
-estecuadro.innerHTML='hola';
+estecuadro.innerHTML='--o--<br/>-ooo-<br>ooooo';
 switch (color){
     case 1:
         decision=a;
