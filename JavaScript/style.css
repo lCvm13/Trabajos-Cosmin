@@ -53,3 +53,9 @@
     width:30vh;
     background-color:cyan;
 }
+
+.figura{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
