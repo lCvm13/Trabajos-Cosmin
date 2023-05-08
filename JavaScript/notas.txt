@@ -1,0 +1,22 @@
+function dibujar(identificador){
+    id="c"+identificador;
+    let cuadro=document.getElementById(id);
+    if(contador%2!=0){
+        cuadro.innerHTML="☆";
+        contador++;  
+    }else {
+        cuadro.innerHTML="X";
+        contador++;  
+    }
+    for(i=0;i<matriz.length;i++){
+        for(j=0;j<matriz.length;j++){
+            if(matriz[i][j]==id){
+                matriz[i][j]='x';
+            } 
+        }
+
+    }
+    if (matriz[0][0]=='x' && matriz[0][1]=='x' && [0][2]=='x'){
+        alert('Ganaste')
+    }
+}
