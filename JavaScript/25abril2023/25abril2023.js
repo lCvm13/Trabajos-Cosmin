@@ -12,49 +12,52 @@ let matriz = [
 ];
 let i;
 let j;
-let boolean=false;
+let booleanx=false;
+let booleano=false;
 function dibujar(identificador,identificador2){
     id="c"+identificador+identificador2;
     let cuadro=document.getElementById(id);
-    if (contador<9 && contador%2==0){
+    if (contador<9 && contador%2==0 && booleanx ==false && booleano==false){
         cuadro.innerHTML="☆";
         matriz[identificador][identificador2]="x";
         contador++
-    }else if(contador<9 && contador%2!=0){
+    }else if(contador<9 && contador%2!=0 && booleanx ==false && booleano==false){
         cuadro.innerHTML="o";
         matriz[identificador][identificador2]="o";
         contador++
     }
-    if(contador>=3){
+   
         for(i=0;i<matriz.length;i++){
                 if(matriz[i][0]=="x" && matriz[i][1]=="x" && matriz[i][2]=="x"){
-                   boolean=true;
+                   booleanx=true;
                 }else if(matriz[0][i]=="x" && matriz[1][i]=="x" && matriz[2][i]=="x"){
-                    boolean=true;
+                    booleanx=true;
                 }else if(matriz[0][0]=="x" && matriz[1][1]=="x" && matriz[2][2]=="x"){
-                    boolean=true;
+                    booleanx=true;
             }else if(matriz[0][2]=="x" && matriz[1][1]=="x" && matriz[2][0]=="x"){
-                boolean=true;
+                booleanx=true;
             }
         }
         for(i=0;i<matriz.length;i++){
             if(matriz[i][0]=="o" && matriz[i][1]=="o" && matriz[i][2]=="o"){
-               boolean=true;
+               booleano=true;
             }else if(matriz[0][i]=="o" && matriz[1][i]=="o" && matriz[2][i]=="o"){
-                boolean=true;
+                booleano=true;
             }else if(matriz[0][0]=="o" && matriz[1][1]=="o" && matriz[2][2]=="o"){
-                boolean=true;
+                booleano=true;
         }else if(matriz[0][2]=="o" && matriz[1][1]=="o" && matriz[2][0]=="o"){
-            boolean=true;
+            booleano=true;
         }
     }
-      if (boolean==true){
-        alert('Ganaste');
-    }else{
-        alert('Perdiste');
+      if (booleanx==true){
+        alert('Ganó la ☆');
+    }
+        if(booleano==true){
+        alert('Ganó la O');
+       
     }
 
-    }
+    
    
     }
 
