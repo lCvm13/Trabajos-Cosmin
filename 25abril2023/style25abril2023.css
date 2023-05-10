@@ -4,6 +4,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+#boton{
+align-items: center; 
+justify-content: center;
+position:absolute;
+top:10%;
+left:10%; 
+
+border-color: red;
+background-color: rgba(0, 255, 255, 0.151);
+
+
 }
 #principal{
   
