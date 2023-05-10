@@ -6,9 +6,9 @@ let id;
 
 var contador=0;
 let matriz = [
-    ["c01", "c02", "c03"],
-    ["c11" , "c12" , "c13"],
-    ["c21",  "c22", "c23"]
+    [null, null, null],
+    [null , null , null],
+    [null,  null, null]
 ];
 let i;
 let j;
@@ -18,13 +18,23 @@ function dibujar(identificador,identificador2){
     id="c"+identificador+identificador2;
     let cuadro=document.getElementById(id);
     if (contador<9 && contador%2==0 && booleanx ==false && booleano==false){
-        cuadro.innerHTML="☆";
+        if(matriz[identificador][identificador2]==null){
+          cuadro.innerHTML="☆";
         matriz[identificador][identificador2]="x";
-        contador++
+        contador++  
+        }else{
+            alert('No puedes poner colocar aquí tu simbolo')
+        }
+        
     }else if(contador<9 && contador%2!=0 && booleanx ==false && booleano==false){
-        cuadro.innerHTML="o";
+        if(matriz[identificador][identificador2]==null){
+         cuadro.innerHTML="o";
         matriz[identificador][identificador2]="o";
-        contador++
+        contador++   
+        }else{
+            alert('No puedes poner colocar aquí tu simbolo')
+        }
+        
     }
    
         for(i=0;i<matriz.length;i++){
