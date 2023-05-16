@@ -1,0 +1,45 @@
+--
+Acertijo: Tengo ríos, pero no tengo agua. Tengo ciudades, pero no tengo edificios. ¿Qué soy?
+Respuesta: Un mapa.
+--
+Acertijo: Soy alto cuando soy joven y bajo cuando soy viejo. ¿Qué soy?
+Respuesta: Una vela.
+--
+Acertijo: ¿Qué pasa una vez en un minuto, dos veces en un momento y nunca en mil años?
+Respuesta: La letra "M".
+--
+Acertijo: Si estás corriendo en una carrera y adelantas al corredor que está en segundo lugar, ¿en qué posición te encuentras?
+Respuesta: Segundo lugar. Al adelantar al corredor que estaba en segundo lugar, tú tomas su lugar.
+--
+Acertijo: Tengo un cuello pero no tengo cabeza, tengo brazos pero no tengo manos. ¿Qué soy?
+Respuesta: Una camisa.
+--
+Acertijo: ¿Qué tiene dientes pero no puede morder?
+Respuesta: Un peine.
+--
+Si me nombras, me rompes. ¿Qué soy?
+Respuesta: El silencio.
+--
+Entra al agua y no se moja. ¿Qué es?
+Respuesta: La sombra.
+--
+Si lo compartes, lo pierdes. ¿Qué es?
+Respuesta: Un secreto.
+--
+Cuanto más se quita, más grande se vuelve. ¿Qué es?
+Respuesta: Un agujero.
+--
+Siempre estoy frente a ti, pero nunca puedes alcanzarme. ¿Qué soy?
+Respuesta: Tu futuro.
+--
+No soy vivo, pero puedo crecer; no tengo pulmones, pero necesito aire; no tengo boca, pero el agua me mata. ¿Qué soy?
+Respuesta: El fuego.
+--
+Tengo ojos pero no puedo ver. Tengo una cara pero no puedo sonreír. ¿Qué soy?
+Respuesta: Una máscara.
+--
+Tengo hojas pero no soy un árbol, tengo una cara pero no soy una persona. ¿Qué soy?
+Respuesta: Un libro.
+--
+Siempre sube y nunca baja. ¿Qué es?
+Respuesta: La edad.
