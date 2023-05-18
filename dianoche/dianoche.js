@@ -35,6 +35,9 @@ function ponerModoDia() {
     // ponemos letra oscura sobre fondo blanco
     let todo=document.getElementById("todo");
     todo.style.color="black";
+    
+    todo.style.backgroundImage="url('dia.png')";
+
     todo.style.backgroundColor="white";
     window.localStorage.setItem("--modoGuardado","dia");
 

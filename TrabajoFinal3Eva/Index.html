@@ -6,21 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terror</title>
     <link rel="stylesheet" href="./style.css" />
+    <style>
+    #overlay{
+        display:block;
+        justify-content: center;
+        flex-direction: column;
+        background-color: gray;
+        text-align: center;
+    }
+    .scare{
+        display: none;
+        position: fixed;
+
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100vw;
+    }
+    #video{
+        object-fit: cover;
+        width: 100%;
+        height:100%;
+    }
+    </style>
 </head>
-<body id="todo">
-    <h1>Bienvenido, mortal</h1>
+<body id="todo" onload="aplicarCambios()">
     
-    <div class>
-        <img id="noche" src="./noche.png" onclick="ponerModoNoche()">
-        <img id="dia" src="./dia.png" onclick="ponerModoDia()">
+    <h1>Bienvenido, mortal</h1>
+    <div id="overlay">
+        
+        
         <h2>Primera pregunta</h2>
         <p>
-            ¿Qué palabra se escribe incorrectamente en todos los diccionarios?
+        ¿Qué palabra se escribe incorrectamente en todos los diccionarios?
         </p>
         <button onclick="pregunta()"></button>
-        <button id="botonScreamer">clicka
+        <button id="botonScreamer" onclick="botonScreamer()">clicka
         </button>
-    </div>
+        </div>
+        <div class="scare" id="scareDiv" >
+        <video id="video" class="video" src="./video.mp4" loop></video>
+        </div>
+  
 
  
     
