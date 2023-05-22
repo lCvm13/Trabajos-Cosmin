@@ -3,6 +3,11 @@ let todo=document.getElementById("todo");
 let confirmar=false;
 let opcionTexto;
 let opcionFondo;
+let textito;
+let fondo;
+let isClicked=false;
+
+
 function pregunta(){
    let x=prompt('Dime la respuesta','');
    if (x=='incorrectamente'){
@@ -14,7 +19,7 @@ function pregunta(){
         
 function ponerFondo(id){
     
-    let ring=document.getElementById("ring");
+   let ring=document.getElementById("ring");
     let it=document.getElementById("it");
     let krueger=document.getElementById("krueger");
     let ocultar=document.getElementById("ocultar");
@@ -22,14 +27,17 @@ function ponerFondo(id){
     if(id==it){
         todo.style.backgroundImage="url('./it.jpg')";
         opcionFondo=1;
+        window.sessionStorage.setItem("fondo",opcionFondo);
     }
     if(id==ring){
         todo.style.backgroundImage="url('./ring.jpg')";
         opcionFondo=2;
+        window.sessionStorage.setItem("fondo",opcionFondo);
     }
     if (id==krueger){
         todo.style.backgroundImage="url('./krueger.webp')";
         opcionFondo=3;
+        window.sessionStorage.setItem("fondo",opcionFondo);
     }
     ring.style.display="none";
     krueger.style.display="none";
@@ -40,55 +48,65 @@ function ponerFondo(id){
 
 }
 function ponerTexto(id){
+   
     let boton=document.getElementById("boton");
-    
     if(id==t1){
         todo.style="font-weight: bolder; text-shadow: 2px 2px red";
         boton.style="font-weight: bolder; text-shadow: 2px 2px red;font-size:xx-large;color:white";
         opcionTexto=1;
-       
-    }else if(id==t2){
+       window.sessionStorage.setItem("textito",opcionTexto);
+    }
+    if(id==t2){
         todo.style="font-weight: bolder; text-shadow: 4px 4px rgba(30, 0, 255, 0.521)";
         boton.style="font-weight: bolder; text-shadow: 4px 4px rgba(30, 0, 255, 0.521);font-size:xx-large;color:white";
        opcionTexto=2;
+       window.sessionStorage.setItem("textito",opcionTexto);
     }
-    else if(id==t3){
+    if(id==t3){
        todo.style="font-weight: bolder; text-shadow: 3px 3px 3px rgba(148, 3, 116, 0.521)";
        boton.style="font-weight: bolder; text-shadow: 3px 3px 3px rgba(148, 3, 116, 0.521);font-size:xx-large;color:white";
        opcionTexto=3;
+       window.sessionStorage.setItem("textito",opcionTexto);
     }
     
-
+    
+   
 }   
 
 function aplicarCambios(){
     let todo=document.getElementById("todo");
-    switch (opcionTexto){
-        case opcionTexto=1:
+    let boton=document.getElementById("boton");
+
+   
+    
+    if (window.sessionStorage.getItem("textito")==1){
         todo.style="font-weight: bolder; text-shadow: 2px 2px red";
         boton.style="font-weight: bolder; text-shadow: 2px 2px red;font-size:xx-large;color:white";
-        break;
-        case opcionTexto=2:
+    }
+    if (window.sessionStorage.getItem("textito")==2){
         todo.style="font-weight: bolder; text-shadow: 4px 4px rgba(30, 0, 255, 0.521)";
         boton.style="font-weight: bolder; text-shadow: 4px 4px rgba(30, 0, 255, 0.521);font-size:xx-large;color:white";
-        break;
-        case opcionTexto=3:
+    }
+    if (window.sessionStorage.getItem("textito")==3){
         todo.style="font-weight: bolder; text-shadow: 3px 3px 3px rgba(148, 3, 116, 0.521)";
         boton.style="font-weight: bolder; text-shadow: 3px 3px 3px rgba(148, 3, 116, 0.521);font-size:xx-large;color:white";
-        break;
+    
     }
-    switch (opcionFondo){
-        case opcionFondo=1:
+ if(window.sessionStorage.getItem("fondo")==1){
         todo.style.backgroundImage="url('./it.jpg')";
-        break;
-        case opcionFondo=2:
-        todo.style.backgroundImage="url('./ring.jpg')";
-        break;
-        case opcionFondo=3:
-        todo.style.backgroundImage="url('./krueger.webp')";
-        break;
     }
+    if(window.sessionStorage.getItem("fondo")==2){
+        todo.style.backgroundImage="url('./ring.jpg')";
+    }
+    if (window.sessionStorage.getItem("fondo")==3){
+        todo.style.backgroundImage="url('./krueger.webp')";
+        
+    }
+
+   
 }
+
+
 function ponerBoton(){
     let boton=document.getElementById("boton");
     if(confirmar==false){
@@ -127,4 +145,28 @@ function ocultarVideo(){
 }
 function timeout(){
       setTimeout(ocultarVideo,1000);   
+}
+
+function centrar(){
+
+var centrado= document.body.style.textAlign;
+var opcion;
+if(centrado=='center'){
+    todo.style.textAlign='left';
+    opcion='left';
+}else{
+    todo.style.textAlign='center';
+    opcion='center';
+}
+return opcion;
+
+
+}
+
+function aplicarCentro () {
+if (centrar()=='left'){
+    todo.style.textAlign='center';
+}else{
+    todo.style.textAlign='left';
+}
 }

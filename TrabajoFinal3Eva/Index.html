@@ -12,7 +12,7 @@
         justify-content: center;
         flex-direction: column;
         background-color: gray;
-        text-align: center;
+        
     }
     .scare{
         display: none;
@@ -30,9 +30,9 @@
     }
     </style>
 </head>
-<body id="todo" onload="aplicarCambios()">
+<body id="todo" onload="aplicarCentro()">
     
-    <h1>Bienvenido, mortal</h1>
+    <h1 onload="centrar">Bienvenido, mortal</h1>
     <div id="overlay">
         
         
@@ -40,7 +40,7 @@
         <p>
         ¿Qué palabra se escribe incorrectamente en todos los diccionarios?
         </p>
-        <button onclick="pregunta()"></button>
+        <button id="boton" onclick="pregunta()"></button>
         <button id="botonScreamer" onclick="botonScreamer()">clicka
         </button>
         </div>
