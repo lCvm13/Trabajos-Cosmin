@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,54 +8,86 @@
     <title>Terror</title>
     <link rel="stylesheet" href="./style.css" />
     <style>
-    #overlay{
-        display:block;
-        justify-content: center;
-        flex-direction: column;
-        background-color: gray;
-        
-    }
-    .scare{
-        display: none;
-        position: fixed;
+        #overlay {
+            display: block;
+            justify-content: center;
+            flex-direction: column;
 
-                top: 0;
-                left: 0;
-                height: 100vh;
-                width: 100vw;
-    }
-    #video{
-        object-fit: cover;
-        width: 100%;
-        height:100%;
-    }
+
+        }
+
+        .scare {
+            display: none;
+            position: fixed;
+
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
-<body id="todo" onload="aplicarCentro()">
-    
+
+<body id="todo" onload="aplicarCambios()">
+    <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="historias.html">Historias</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><div id="sol">
+            <input id="ver" type="button" onclick="mostrarModal()" value="Modal">
+            <input id="ocultar" type="button" onclick="ocultarModal()" value="Ocultar modal">
+
+        </div></li>
+        </ul>
+      </nav>
+      <div id="solucion">
+        <p><br>
+            La solución se verá mediante colores en unos segundos.
+        </p>
+    </div>
+
     <h1 onload="centrar">Bienvenido, mortal</h1>
     <div id="overlay">
-        
-        
-        <h2>Primera pregunta</h2>
-        <p>
-        ¿Qué palabra se escribe incorrectamente en todos los diccionarios?
-        </p>
-        <button id="boton" onclick="pregunta()"></button>
-        <button id="botonScreamer" onclick="botonScreamer()">clicka
-        </button>
+        <div class="section">
+            <h2>Primera pregunta</h2>
+            <p>
+                ¿Qué palabra se escribe incorrectamente en todos los diccionarios?
+            </p>
+            <button id="boton" class="button" onclick="pregunta()"></button>
+            <button id="botonScreamer" class="button" onclick="botonScreamer()">clicka
+            </button>
+
         </div>
-        <div class="scare" id="scareDiv" >
+
+
+        <div class="section">
+            <h2 class="section-heading">Sección 2</h2>
+            <p class="section-content">Sed euismod neque et nisl commodo, sed finibus purus bibendum. Vestibulum ante
+                ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed lobortis sagittis fermentum.
+                Vestibulum vestibulum mi in ipsum tempus, nec laoreet urna finibus. Vivamus lacinia risus vitae lorem
+                auctor aliquam.</p>
+
+        </div>
+
+        <a class="button" href="#">Ver más</a>
+    </div>
+
+
+    <div class="scare" id="scareDiv">
         <video id="video" class="video" src="./video.mp4" loop></video>
-        </div>
-  
-
- 
-    
-    
-
-<script src="Script.js"></script>
+    </div>
 
 
-    
+
+    <script src="Script.js"></script>
+
+
+
 </html>

@@ -170,3 +170,28 @@ if (centrar()=='left'){
     todo.style.textAlign='left';
 }
 }
+
+function ocultarModal() {
+    
+    document.getElementById("solucion").style.display = "none";
+
+    
+    document.getElementById("ver").style.display = "inline-block";
+
+  
+    document.getElementById("ocultar").style.display = "none";
+
+    return;
+}
+
+function mostrarModal() {
+    document.getElementById("solucion").style.display = "table";
+
+    
+    document.getElementById("ocultar").style.display = "inline-block";
+
+    
+    document.getElementById("ver").style.display = "none";
+
+    return;
+}

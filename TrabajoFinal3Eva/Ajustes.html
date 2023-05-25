@@ -22,7 +22,7 @@
             background-color: gray;
         }
         #t1,#t2,#t3{
-            background-color: white;
+            background-color: rgba(0, 0, 0, 0.8);
         }
         #zonaBoton{
             display: flex;
@@ -38,7 +38,24 @@
     </style>
 </head>
 <body id="todo">
-    <h1 style="background-color: white">Elige el texto</h1>
+    <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="historias.html">Historias</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><div id="sol">
+            <input id="ver" type="button" onclick="mostrarModal()" value="Modal">
+            <input id="ocultar" type="button" onclick="ocultarModal()" value="Ocultar modal">
+
+        </div></li>
+        </ul>
+      </nav>
+      <div id="solucion">
+        <p><br>
+            La solución se verá mediante colores en unos segundos.
+        </p>
+    </div>
+    <h1 style=" background-color: rgba(0, 0, 0, 0.8)">Elige el texto</h1>
     <div id="zonaTextos" class="losDiv">
        <div id="t1" onclick="ponerTexto(t1)"><h2 style="font-weight: bolder; text-shadow: 2px 2px red">¿Así lo quieres...?</p></div>
        <div id="t2" onclick="ponerTexto(t2)"><h2 style="font-weight: bolder; text-shadow: 3px 3px rgba(30, 0, 255, 0.521)">¿Así lo quieres...?</p></div>
@@ -50,9 +67,7 @@
         <img id="krueger" src="./krueger.webp" onclick="ponerFondo(krueger)">
         <img id="it" src="./it.jpg" onclick="ponerFondo(it)">
     </div>
-    <div>
-        <button id="centrar" onclick=centrar()>centrar</button>
-    </div>
+   
     <div id="zonaBoton">
         <button id="boton" onload="ponerBoton()"><a href="./Index.html" style="text-decoration: none;">COMENZAR</a></button>
     </div>
