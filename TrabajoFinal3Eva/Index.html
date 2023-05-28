@@ -12,8 +12,6 @@
             display: block;
             justify-content: center;
             flex-direction: column;
-
-
         }
 
         .scare {
@@ -35,55 +33,80 @@
 </head>
 
 <body id="todo" onload="aplicarCambios()">
+     <!------------------------------Menu---------------------------------->
     <nav class="menu">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="historias.html">Historias</a></li>
-          <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="Ajustes.html">Ajustes</a></li>
+            <li><a href="xml.html">XML</a></li>
           <li><div id="sol">
             <input id="ver" type="button" onclick="mostrarModal()" value="Modal">
             <input id="ocultar" type="button" onclick="ocultarModal()" value="Ocultar modal">
-
         </div></li>
         </ul>
       </nav>
+      <!------------------------------Texto del modal---------------------------------->
       <div id="solucion">
-        <p><br>
-            La solución se verá mediante colores en unos segundos.
+        <p>Trabajo hecho por Cosmin-Valentín Movila 1DAW
+            <br><br>
+            ALERTA: ESTE TRABAJO CONTIENE UN SCREAMER. RECOMENDABLE ESTAR PREPARADO.
+            <br><br>
+            La página contiene los siguientes elementos:
+            <br><br>
+            Menú que contiene los enlaces a las distintas páginas disponibles junto a este modal.
+            <br><br>
+            Página de ajustes donde se podrá ajustar el diseño del texto dandole sombra, elegir la imagen del fondo
+            y se podrá insertar un nombre que pertenecera al usuario. Dichos ajustes se guardan para las demas páginas
+            <br><br>
+            Página de inicio donde habrá una pregunta con tres botones de las cuales una es un prompt para resolver la pregunta,
+            otro boton es para rendirse que mandará al usuario a la página que contiene el xml
+            y el ultimo boton es un boton trampa que contiene un screamer que dura 1 segundo, tiene sonido y video.
+            <br><br>
+            Página xml simple que tiene el xml en un iframe y contiene un boton para reproducir la cancion de la que hace referencia el xml.
         </p>
     </div>
-
-    <h1 onload="centrar">Bienvenido, mortal</h1>
+    <!------------------------------Primera pregunta de la página con sus tres opciones---------------------------------->
+    <h1>Bienvenido, mortal</h1>
     <div id="overlay">
         <div class="section">
-            <h2>Primera pregunta</h2>
-            <p>
-                ¿Qué palabra se escribe incorrectamente en todos los diccionarios?
-            </p>
-            <button id="boton" class="button" onclick="pregunta()"></button>
-            <button id="botonScreamer" class="button" onclick="botonScreamer()">clicka
-            </button>
-
+            <h2 class="section-heading">Acertijo</h2>
+            <p class="section-content">¿Qué palabra se escribe incorrectamente en todos los diccionarios?</p>
+            <div id="botones">
+            <button id="boton" class="button" href="xml.html"><a href="xml.html"><p class="section-content">Me rindo</p></a></button>
+            <button id="botonScreamer" class="button" onclick="botonScreamer()"><p>Esta es la respuesta</p></button>
+            <button id="botonD" class="button" onclick="pregunta()"><p class="section-content">Insertar respuesta</p></button>
+            </div>
         </div>
-
-
+    <!------------------------------Segunda pregunta de la pagina---------------------------------->
         <div class="section">
-            <h2 class="section-heading">Sección 2</h2>
-            <p class="section-content">Sed euismod neque et nisl commodo, sed finibus purus bibendum. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed lobortis sagittis fermentum.
-                Vestibulum vestibulum mi in ipsum tempus, nec laoreet urna finibus. Vivamus lacinia risus vitae lorem
-                auctor aliquam.</p>
+            <h2 class="section-heading">Curiosidad</h2>
+            <p class="section-content">"El exorcista" (1973): Durante el rodaje de esta icónica película de terror, 
+                se dice que ocurrieron varias tragedias y eventos extraños. 
+                Algunos miembros del equipo sufrieron lesiones inexplicables y se reportaron incendios en el set. 
+                Estos sucesos alimentaron la leyenda de la "maldición de El exorcista".</p>
+            </div>
 
+            <div class="section">
+                <h2 class="section-heading">Pregunta</h2>
+                <p class="section-content">¿Qué tiene dientes pero no puede morder?</p>
+        <p style="text-align: center;">
+        Respuesta: (Solo escriba el sustantivo) <br>
+        <input name="respuestaInput" type="text" placeholder="Ingrese su respuesta"/>
+        <button type="submit" onclick="guardarRespuesta()">Guardar</button> 
+        </p>
         </div>
 
-        <a class="button" href="#">Ver más</a>
+
     </div>
 
+
+    
 
     <div class="scare" id="scareDiv">
-        <video id="video" class="video" src="./video.mp4" loop></video>
+        <video id="video" class="video" src="./videos/video.mp4" loop></video>
     </div>
-
+    <div id="nombreUsuario">Desconocido</div>
+    
 
 
     <script src="Script.js"></script>

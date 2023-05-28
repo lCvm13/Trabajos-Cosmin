@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     background-color: #000;
     color: #fff;
@@ -38,7 +38,7 @@ body {
   }
   
   .section-content {
-    font-size: 16px;
+    font-size: x-large;
   }
   
   .image {
@@ -56,13 +56,19 @@ body {
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    
   }
   
+  #botones{
+    display: flex;
+    justify-content: space-evenly;;
+    
+  }
   .button:hover {
     background-color: #800000;
   }
   
-  /* Estilos específicos para la página de terror */
+  
   body::before {
     content: '';
     position: fixed;
@@ -83,10 +89,11 @@ body {
   .section-heading {
     color: #ff0000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
   }
   
   .section-content {
-    text-align: justify;
+    text-align: center;
   }
   
   .image {
@@ -115,7 +122,10 @@ body {
   display: inline-block;
   margin-right: 10px;
 }
-
+a{
+  color:white;
+  text-decoration: none;
+}
 .menu ul li a {
   color: #fff;
   text-decoration: none;
@@ -162,4 +172,70 @@ body {
   background-color: darkred;
   font-weight: bold;
   color: white;
+}
+
+#zonaXML{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+iframe{
+  height: 80vh;
+  width: 80vh;
+}
+
+#botonCancion{
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  background-color: #800000;
+  color:#fff;
+  font-weight: bolder;
+  font-size: medium;
+}
+
+#nombreUsuario{
+  position: fixed;
+  z-index: 9999;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #bc3800;
+  color: #000;
+  bottom: 20px;
+  right: 20px;
+}
+
+#ring,#krueger,#it{
+  width:200px;
+  height:200px;
+}
+.losDiv{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+#zonaTextos{
+  border-style: solid;
+  border-color: blue;
+  background-color: gray;
+}
+#zonaNombre{
+  border-style: solid;
+  border-color: blue;
+  background-color: gray;
+  text-align: center;
+}
+#t1,#t2,#t3{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#zonaBoton{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
 }
