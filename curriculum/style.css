@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/*
+Diseña un curriculum con código html y css, incorpora si quieres toda la funcionalidad de javaScript que conozcas
+y que creas que puede ser interesante puesto que lo pondremos en la página de github y será tu ventana al mundo laboral,
+pero para la nota de la actividad no será imprescindible, puedes usar eventos de css, animaciones y 
+todo lo visto en el trimestre pasado.
+4 puntos sobre el total estarán relacionados con elementos sass, 
+el uso de archivos parciales, la correcta declaración de variables, 
+la herencia de estilos...3 puntos con elementos css y javascript.
+2 puntos estarán relacionados con la estructura html
+1 punto cuenta la originalidad y estructuración del proyecto.
+*/
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: center;
+  margin-right: 2%;
+  justify-self: center;
+  top: 0;
+}
+header ul {
+  display: flex !important;
+  flex-direction: column !important;
+}
+header ul button {
+  font-weight: bolder;
+  border: none !important;
+  background-color: rgb(255, 255, 255) !important;
+}
+header ul .list-group-item.active {
+  background: linear-gradient(to right, aqua, blue, white) !important;
+}
+
+@keyframes animacionTema {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+section, #portfolio, #cv, #sobre-mi {
+  width: 80% !important;
+  margin: 2%;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+#sobre-mi #about {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 3%;
+  gap: 30px;
+}
+#sobre-mi #about #foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sobre-mi #about #foto img {
+  height: 400px;
+  width: 400px;
+}
+#sobre-mi #about .contenido {
+  width: 50%;
+  font-size: 24px;
+}
+#sobre-mi #about .contenido span {
+  color: rgb(106, 189, 249);
+}
+#sobre-mi h2 {
+  margin: 3%;
+}
+#sobre-mi h3 {
+  margin-top: 5%;
+  text-align: center;
+}
+#sobre-mi #carouselContenedor {
+  display: flex;
+  flex-direction: column;
+}
+#sobre-mi #carouselContenedor .carousel-item {
+  padding: 10px;
+  box-sizing: border-box;
+}
+#sobre-mi #carouselContenedor .carousel-item p, #sobre-mi #carouselContenedor .carousel-item ul {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+#sobre-mi #carouselContenedor .carousel-item ul {
+  text-align: center;
+}
+#sobre-mi #carouselContenedor .carousel-item ul div {
+  display: inline-block;
+  text-align: left;
+}
+#sobre-mi #carouselContenedor .carousel-item div {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+#sobre-mi #carouselContenedor .carousel-item div i {
+  font-size: 30px;
+}
+
+.contacto_iconos i {
+  font-size: 35px;
+}
+
+#cv {
+  border-style: inset;
+  border-color: rgb(106, 189, 249);
+}
+
+#portfolio {
+  border-style: double;
+  border-color: rgb(106, 189, 249);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 1%;
+}
+#portfolio h2 {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+#portfolio #proyectos {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+#portfolio #proyectos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: solid rgb(106, 189, 249) 2px;
+}
+#portfolio #proyectos div img {
+  width: 200px;
+  height: 200px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: rgba(106, 189, 249, 0.7);
+}
+
+@keyframes voltear {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes volteardos {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+#idiomas {
+  position: absolute;
+  top: 0;
+  margin-top: 2%;
+  margin-right: 1%;
+  float: right;
+}
+
+.idioma {
+  width: 40px;
+  height: 40px;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+  #sobre-mi {
+    border-color: rgba(135, 204, 252, 0.885);
+    border-style: dashed;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+  #sobre-mi {
+    border-color: rgba(135, 204, 252, 0.885);
+    border-style: double;
+  }
+}
+@media only screen and (max-width: 1230px) {
+  #portfolio {
+    margin-top: 20%;
+  }
+  #proyectos {
+    grid-template-columns: auto auto auto !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    margin-right: 30px;
+  }
+  #idiomas {
+    margin-right: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .contenido > span, p {
+    font-size: 18px !important;
+  }
+  #logo {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  #portfolio {
+    margin-top: 60%;
+  }
+  #proyectos {
+    grid-template-columns: auto auto !important;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    margin-right: 2px;
+  }
+  #sobre-mi {
+    display: flex;
+    flex-direction: column;
+  }
+  #about {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  #idiomas {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .contenido > span, p {
+    padding: 10px;
+    font-size: 14px !important;
+  }
+  .carousel-item div {
+    align-items: center !important;
+  }
+  #logo {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  #portfolio {
+    margin-top: 2%;
+  }
+  #proyectos {
+    grid-template-columns: auto !important;
+  }
+}/*# sourceMappingURL=style.css.map */
