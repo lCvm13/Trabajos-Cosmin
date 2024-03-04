@@ -316,7 +316,7 @@ switch(true){
         break;
         case sectionS=="contacto":
             Swal.fire({
-                title: "Contacto",
+                title: "Contact",
                 icon: "info",
                 html:`
                 <div class="contacto_iconos">
