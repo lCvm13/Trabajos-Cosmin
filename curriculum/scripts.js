@@ -251,8 +251,11 @@ function cargarIdioma(idiomaElegido) {
     cargarSection(sectionSeleccionado,idiomaElegido)
   }
 function cargarSection(sectionS,idioma){
+    let botonesCab=document.getElementsByClassName("list-group-item");
     sectionP.style=`animation: animacionTema 0.5s ease;`;
     if(idioma == "spanish"){
+    botonesCab[0].innerHTML="Sobre mi";
+    botonesCab[3].innerHTML="Contacto";
     switch(true){
         case sectionS=="sobre-mi":
         sectionP.setAttribute("id","sobre-mi");
@@ -292,6 +295,8 @@ function cargarSection(sectionS,idioma){
         break;
     }
 }else{
+    botonesCab[0].innerHTML="About me";
+    botonesCab[3].innerHTML="Contact";
 switch(true){
         case sectionS=="sobre-mi":
         sectionP.setAttribute("id","sobre-mi");
